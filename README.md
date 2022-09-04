@@ -1,6 +1,17 @@
 # Creality toolhead for stealthburner.
 
-Not recommended but a potential pathway for e3->switchwire conversions. It's recommended to have an all metal heatbreak, both for printing ABS and for a higher volumetric flow rate. A good quality bimetallic heatbreak can outperform a stock V6. The pneumatic coupler version is intended for a lined heatbreak and complicates maintenance, only use it if you absolutely need it. I'm activley testing for the minimum viable product here.
+Not recommended but a potential pathway for e3->switchwire conversions. It's recommended to have an all metal heatbreak, both for printing ABS and for a higher volumetric flow rate. A good quality bimetallic heatbreak can outperform a stock V6. 
+
+## Versions
+The pneumatic coupler version is intended for a lined heatbreak and complicates maintenance, only use it if you absolutely need it, these parts have 'PC' in their name. These are pictured in magenta. I'm trying to provide a solution that requires the least amount of additional parts. 
+
+<img src="img/pneumatic_coupler.jpg" alt="pneumatic coupler version" width=800/>
+
+Otherwise use the parts without 'PC' in their name and rely on the toolhead to gently clamp the bowden tube. These are pictured in grey.
+
+<img src="img/friction_coupler.jpg" alt="version without pneumatic coupler" width=400/>
+
+
 
 I have a [version for AB-BN](https://github.com/strayr/voron-afterburner-ender3/tree/main/AA-BN-30_toolhead) of this that i have been using extensively.
 
@@ -16,14 +27,11 @@ The threads of the nozzle should not be visible.
 
 <img src="img/mk8_heater_position.png" width=800/>
 
-
-
 ## Nozzle position
 
-The specified position for the nozzle is 61.5mm from the flat surface at the top of the toolhead. All other dimension are derived from this, and the distance between nozzle tip and duct may be different for other toolheads. On this toolhead the clearance distance is 2.37mnm from the tip of the nozzle to the lowest point on the duct as shown. You can check with an allen key set by setting the nozzle height to the bed and lifting the loolhead 0.1mm at a time until a 2.5mm allen key fits under the duct. It is to be expected that nozzles and heatbreaks might differ in length slightly so +/- 0.2mm should be within spec.
+The specified position for the nozzle is 61.5mm from the flat surface at the top of the toolhead. All other dimension are derived from this, and the distance between nozzle tip and duct may be different for other toolheads. On this toolhead the clearance distance is 2.37mm from the tip of the nozzle to the lowest point on the duct as shown. You can check with an allen key set by setting the nozzle height to the bed and lifting the toolhead 0.1mm (or less) at a time until a 2.5mm allen key fits under the duct. It is to be expected that nozzles and heatbreaks might differ in length slightly so +/- 0.2mm should be well within spec.
 
 <img src="img/nozzle_position.png" width=800/>
-
 
 ## Extra Materials
 * 2x standard 5mm heatset inserts (two extra)
@@ -37,6 +45,17 @@ The specified position for the nozzle is 61.5mm from the flat surface at the top
 <img src="img/E3_toolhead_rear.jpg" width=800/>
 
 <img src="img/in_use.jpg" width=800/>
+
+## Updates
+- ### 2020-09-04
+    - no spaces in filenames
+    - STEP available
+    - pneumatic coupler version available
+    - clarified nozzle position and reference plane with wile.e
+    - (compatibility) cutouts made to fit inductive probes without recessed screw heads, thanks Jason.  <img src="img/probe_cutout.png">
+    - (printability) cutout for heatbreak setscrew is now a a straight-sided slot not a matching hole
+    - (printability) heatsink to toohead back mounting screws are no longer through holes, rear cutouts now print neatly. <img src="img/improved_printability.png">
+  - 
 
 ## Contact 
 * [my github](https://github.com/strayr/strealthburner_creality_edition)
